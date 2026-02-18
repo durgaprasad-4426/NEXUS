@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "430123647935",
+    "project_id": "nexus-9e9dd",
+    "storage_bucket": "nexus-9e9dd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430123647935:android:f34565dc5cdc3c09a3570a",
+        "android_client_info": {
+          "package_name": "com.example.nexus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGzYTwePRLIymVjhCPrXZKgxtrLNG8jm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
