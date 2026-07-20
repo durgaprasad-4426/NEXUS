@@ -2,11 +2,6 @@
 
 > A powerful and innovative Flutter application built with modern technologies.
 
-![Language](https://img.shields.io/badge/Language-Dart-00D4AA?style=flat-square)
-![Repository Size](https://img.shields.io/github/repo-size/durgaprasad-4426/NEXUS?style=flat-square)
-![Last Commit](https://img.shields.io/github/last-commit/durgaprasad-4426/NEXUS?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-
 ## 📋 Table of Contents
 
 - [About](#about)
