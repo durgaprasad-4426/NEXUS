@@ -414,7 +414,7 @@ class _TopicsCardState extends State<TopicsCard>
       fontWeight: FontWeight.w600,
     );
     final contentStyle = const TextStyle(
-      color: Colors.white70,
+      color: Color.fromARGB(179, 202, 114, 114),
       fontSize: 16,
       height: 1.4,
     );

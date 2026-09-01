@@ -41,7 +41,7 @@ class _ConceptCardState extends State<ConceptCard> {
           gradient: LinearGradient(
             colors: _hovering
                 ? [Colors.blueAccent.withOpacity(0.3), Colors.black.withOpacity(0.7)]
-                : [Colors.white, Colors.grey.shade200],
+                : [const Color.fromARGB(255, 28, 143, 156), Colors.grey.shade200],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
