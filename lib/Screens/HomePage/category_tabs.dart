@@ -21,7 +21,7 @@ class CategoryTabs extends StatelessWidget {
     required this.selectedIndex,
     required this.onTabSelected,
     this.activeColor = Colors.blueAccent,
-    this.inactiveColor = Colors.grey,
+    this.inactiveColor = const Color.fromARGB(255, 230, 165, 165),
     this.backgroundColor = const Color(0xFF1A1A1A),
   });
 
