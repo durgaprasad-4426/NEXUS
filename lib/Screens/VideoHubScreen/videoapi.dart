@@ -1,10 +1,14 @@
 
 import 'dart:convert';
 
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'package:nexus/Screens/VideoHubScreen/videodata.dart';
 
-const String apiKey = "AIzaSyA-sAlxAPbgEKBmZ1iiBF0IbfLq7ABg_cM";
+String get apiKey =>
+    dotenv.env['YOUTUBE_API_KEY'] ??
+    dotenv.env['PI_KEY'] ??
+    '';
 
 Future<VideoData> fetchVideoDetails(String videoId) async {
   final url = Uri.parse(
