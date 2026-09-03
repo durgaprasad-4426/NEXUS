@@ -17,6 +17,9 @@ import 'package:nexus/firebase_options.dart';
 import 'package:nexus/navigation_bar.dart';
 import 'package:provider/provider.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:flutter/foundation.dart';
+import 'package:device_preview/device_preview.dart';
+
 
 
 
@@ -36,22 +39,24 @@ void main() async {
   );
 
 
-
-  
-  runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => ArraysOperationsProvider()),
-        ChangeNotifierProvider(create: (_)=>TreesOperationsProvider()),
-        ChangeNotifierProvider(create: (_)=>UserProvider()),
-        ChangeNotifierProvider(create: (_)=>BadgesProvider()),
-         ChangeNotifierProvider(create: (_)=>DailyTaskProvider()),
-        ChangeNotifierProvider(create: (_)=>ChatProvider()),
-        ChangeNotifierProvider(create: (_)=>ProgressUpdateProvider())
-      ],
-      child:  const MainApp(),
-    ),
+  final app = MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (_) => ArraysOperationsProvider()),
+      ChangeNotifierProvider(create: (_) => TreesOperationsProvider()),
+      ChangeNotifierProvider(create: (_) => UserProvider()),
+      ChangeNotifierProvider(create: (_) => BadgesProvider()),
+      ChangeNotifierProvider(create: (_) => DailyTaskProvider()),
+      ChangeNotifierProvider(create: (_) => ChatProvider()),
+      ChangeNotifierProvider(create: (_) => ProgressUpdateProvider()),
+    ],
+    child: const MainApp(),
   );
+
+  if (kIsWeb) {
+    runApp(DevicePreview(builder: (context) => app));
+  } else {
+    runApp(app);
+  }
 }
 
 
